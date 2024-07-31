@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>Predicted Obesity Level: {{ result }}</p>
+        <a href="{% url 'predict_obesity_level' %}">Make another prediction</a>
+    </div>
+    <script src="{% static 'app.js' %}"></script>
+</body>
+</html>
